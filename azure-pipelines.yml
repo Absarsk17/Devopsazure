@@ -1,0 +1,12 @@
+trigger: 
+- master
+
+pool:
+ vmImages: ubuntu-latest
+
+stages:
+  - stage: A
+    jobs:
+      - job: Ajob
+        steps:
+          - script: echo"hello Absar"
